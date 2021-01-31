@@ -44,7 +44,7 @@ def send_mail():
     server.starttls()
     server.ehlo()
 
-    server.login('chaudharinikita9999@gmail.com', 'sknapetgithlxyjq')
+    server.login('YOUR_MAIL@gmail.com', 'sknapetgithlxyjq')
 
     subject = 'Hey...Nikita Price fell Down !'
     body = 'Check th Amazon Link https://www.amazon.in/Samsung-Galaxy-Storage-Additional-Exchange/dp/B08445DF23/ref=redir_mobile_desktop?  ie=UTF8&aaxitk=JRR-urbfhsIOWwTcUCScIA&hsa_cr_id=9024981630302&ref_=sb_s_sparkle'
@@ -52,8 +52,8 @@ def send_mail():
     msg = f"Subject:{subject}\n\n{body}"
 
     server.send_mail(
-        'chaudharinikita9999@gmail.com',
-        'nikita.chaudhari121199@gmail.com',
+        'YOUR_MAIL@gmail.com',
+        'NEXT_MAIL@gmail.com',
         msg
     )
     print("HEY EMAIL SENT SUCCESFULLY")
